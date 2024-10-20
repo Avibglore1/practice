@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS for react</h1>
+    <script>
+      let arr = [10,20,30,40]; 
+       
+        // function map(arr,cb){
+        //     let newArray= [];
+        //     for (let i=0;i<arr.length;i++){
+        //         let sqValue = cb(arr[i]);
+        //         newArray.push(sqValue);
+        //     }
+        //     return newArray
+        // }
+        
+        // console.log(map(arr,squarer))
+        
+        function squarer(elem){
+            return elem * elem
+        }
+
+        const newArray = arr.map(squarer);
+        console.log('newArray',newArray);
+    </script>
+</body>
+</html>
